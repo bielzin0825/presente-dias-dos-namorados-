@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mensagem do Stitch 💙</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+      margin: 0;
+      padding: 30px;
+      background: linear-gradient(to right, #ffe0ec, #ffeaf4);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .stitch-left,
+    .stitch-right {
+      width: 340px;
+      max-width: 30vw;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    }
+
+    .balao {
+      position: relative;
+      background: white;
+      color: #c4376d;
+      padding: 15px 20px;
+      border-radius: 20px;
+      font-size: 1.2em;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      font-weight: bold;
+      max-width: 300px;
+      text-align: center;
+      animation: aparecer 1s ease-in-out;
+    }
+
+    .balao::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      transform: translateY(-50%);
+      border: 10px solid transparent;
+      border-right-color: white;
+    }
+
+    @keyframes aparecer {
+      from {
+        transform: scale(0.9);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="stitch-left" src="https://i.postimg.cc/vm5XYRTd/png-lilo-stitch-4.png" alt="Stitch 1">
+    
+    <div class="balao">“Nem todo dia é fácil, mas ter você por perto faz tudo valer a pena. Obrigado por ser meu pedacinho de luz.”🥺💖</div>
+    
+    <img class="stitch-right" src="https://i.postimg.cc/zG5xksZB/pngwing-com.png" alt="Stitch 2">
+  </div>
+</body>
+</html>
